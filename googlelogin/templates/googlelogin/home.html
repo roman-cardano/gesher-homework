@@ -125,6 +125,7 @@
 <header>
     <div class="container">
         <h1>Hello, {{user.username}} :)</h1>
+        <p class="subtitle">Welcome to the EmptyDjangoApp</p>
         <form action="{% url 'logout' %}" method="post">
             {% csrf_token %}
             <button type="submit" class="button">Log Out</button>
